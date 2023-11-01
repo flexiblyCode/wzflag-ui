@@ -2,6 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <my-dialog :visible="visible"></my-dialog>
   </div>
 </template>
 
@@ -12,6 +13,11 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data() {
+    return {
+     visible: true
+    }
   }
 }
 </script>

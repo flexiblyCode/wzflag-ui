@@ -1,0 +1,64 @@
+.my-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2023;
+    background: rgba(0, 0, 0, .15);
+    .dialog-box {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      width: 30%;
+      height: 25%;
+      border-radius: 10px;
+      .dialog-header {
+        display: flex;
+        align-items: center;
+        //border: 1px solid black;
+        margin-top: 20px;
+        padding: 0 20px;
+        height: 30px;
+        overflow: hidden;
+        .title {
+          //border: 1px solid black;
+          float: left;
+          white-space: nowrap;
+          text-align: left;
+          overflow: hidden;
+          font-weight: bold;
+          text-overflow: ellipsis;
+          width: 90%;
+          box-sizing: border-box;
+        }
+        .close {
+          //border: 1px solid black;
+          float: right;
+          text-align: right;
+          width: 10%;
+          box-sizing: border-box;
+          i:hover {
+            color: blue;
+            cursor: pointer;
+          }
+  
+        }
+  
+      }
+      .dialog-content {
+        text-align: left;
+        padding: 10px 20px;
+      }
+      .dialog-footer {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  }
+  .clearfix {
+    clear: both;
+  }

@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "build:lib": "vue-cli-service build --target lib packages/index.js",
+    "build:style": "npx gulp build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {
